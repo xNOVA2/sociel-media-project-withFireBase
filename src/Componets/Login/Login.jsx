@@ -1,10 +1,9 @@
 import React  from 'react'
 import './Login.css';
 import { auth,provider } from '../../config/firebase'
-import { signInWithPopup } from 'firebase/auth'
+import {  signInWithPopup } from 'firebase/auth'
 import { useNavigate } from 'react-router-dom'
-import {BsGoogle} from 'react-icons/bs'
-
+import { BsGoogle} from 'react-icons/bs'
 const Login = () => {
 
 const navii = useNavigate()
@@ -15,15 +14,16 @@ const navii = useNavigate()
     console.log(result);
   }
 
+  
 
 return (
     <div className='login22'>
       <div className='signGoogle'>
-      <h1 >Sign in With Google</h1>
+      <h1 >Sign in using Google</h1>
       </div>
  <div className='btnGoogle'>
  <button onClick={signInwithGoogle} className='btnGoogle2'><BsGoogle  width={40} height={40}/>     Sign in With Google</button>
- 
+
  </div>
     </div>
   )

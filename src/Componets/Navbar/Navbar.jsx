@@ -15,7 +15,7 @@ navii('/')
   return (
     <div className="navbar" >
       <div className="logo">
-      <img src={user?.photoURL || null} widht='50' height='50' alt='' className="logo2" />
+      <img src={user?.photoURL || null} widht='50' height='50'  className="logo2" />
      
       </div>
       <div className="links">
@@ -30,7 +30,6 @@ navii('/')
       </div>
       <div className="login">
 {user? <button onClick={sighUserout} className='btnsignout'>Sign Out</button> :<a href="/"><h3>Login</h3></a>}
-
       </div>
     </div>
   );
